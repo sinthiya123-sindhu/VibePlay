@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibePlay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>VibePlay 💗</h1>
+    <p>Play • Chat • Watch</p>
+</header>
+
+<main>
+
+    <!-- Home -->
+    <section id="home" class="page active">
+        <h2>Welcome 👋</h2>
+        <div class="welcome-card">
+            <h3>What do you want to do?</h3>
+            <p>🎬 Watch Reels &nbsp; 💬 Chat &nbsp; 🎮 Play Games</p>
+        </div>
+    </section>
+
+    <!-- Reels -->
+    <section id="reels" class="page">
+        <h2>🎬 Reels</h2>
+
+        <div class="reel-card">
+            <div class="reel-video">🎬</div>
+            <h3>@sindhu</h3>
+            <p>My first reel ✨</p>
+
+            <div class="actions">
+                <button onclick="likeReel(this)">❤️ <span>0</span></button>
+                <button>💬</button>
+                <button>↗️</button>
+            </div>
+        </div>
+
+        <div class="reel-card">
+            <div class="reel-video">🌸</div>
+            <h3>@friend</h3>
+            <p>Beautiful day 💕</p>
+
+            <div class="actions">
+                <button onclick="likeReel(this)">❤️ <span>0</span></button>
+                <button>💬</button>
+                <button>↗️</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Create -->
+    <section id="create" class="page">
+        <h2>➕ Create</h2>
+
+        <div class="create-card">
+            <button class="upload-btn">🎬 Upload Reel</button>
+            <button class="upload-btn">📷 Upload Photo</button>
+        </div>
+    </section>
+
+    <!-- Chat -->
+    <section id="chat" class="page">
+        <h2>💬 Chat</h2>
+
+        <div class="chat-box">
+            <div class="message received">Hi! 👋</div>
+            <div class="message sent">Hello! 💗</div>
+            <div class="message received">Want to play? 🎮</div>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <!-- Games -->
+    <section id="games" class="page">
+        <h2>🎮 Games</h2>
+
+        <div class="game-card">
+            <h3>✊ Rock Paper Scissors</h3>
+            <button onclick="playGame('Rock')">✊</button>
+            <button onclick="playGame('Paper')">📄</button>
+            <button onclick="playGame('Scissors')">✌️</button>
+
+            <p id="gameResult">Choose one!</p>
+        </div>
+
+        <div class="game-card">
+            <h3>🧠 Quick Quiz</h3>
+            <p>Which language are we using for the frontend?</p>
+            <button onclick="quiz('Python')">Python</button>
+            <button onclick="quiz('HTML')">HTML</button>
+            <p id="quizResult"></p>
+        </div>
+    </section>
+
+</main>
+
+<!-- Bottom Navigation -->
+<nav>
+    <button onclick="showPage('home')">🏠<span>Home</span></button>
+    <button onclick="showPage('reels')">🎬<span>Reels</span></button>
+    <button onclick="showPage('create')">➕<span>Create</span></button>
+    <button onclick="showPage('chat')">💬<span>Chat</span></button>
+    <button onclick="showPage('games')">🎮<span>Games</span></button>
+</nav>
+
+<script src="script.js"></script>
+
+</body>
+                  </html>
